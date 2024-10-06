@@ -20,7 +20,11 @@ void enableVirtualTerminalProcessing() {
 int main() {
     enableVirtualTerminalProcessing();
 
-    reg();
+    cout << red << "Hello world!\n";
+    cout << blu << "Hello world!\n";
+    cout << yel << "Hello world!\n";
+    cout << mag << "Hello world!\n";
+    cout << reset << "Hello world!\n";
 
     system("pause");
     return 0;
