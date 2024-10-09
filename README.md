@@ -1,3 +1,3 @@
 # color
-Gestione colori tramite stringhe, mike tyson reference
-![immagine](https://github.com/user-attachments/assets/0588b0ab-5b67-4f4c-9b97-9fe762c93d6b)
+Gestione colori tramite stringhe, grazie a **pixelfederico** per gli hints and tricks
+![immagine](https://github.com/user-attachments/assets/caac581c-7864-4b4e-8c15-a32b9b723224)
