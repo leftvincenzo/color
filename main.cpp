@@ -1,32 +1,27 @@
 #include <iostream>
-#include <windows.h>
 
-using namespace std;
+#define RED "\033[31m" // red
+#define YEL "\033[33m" // yellow
+#define BLU "\033[34m" // blue
+#define MAG "\033[35m" // magenta
+#define CYA "\033[36m" // cyan
+#define WHI "\033[37m" // white
+#define BLC "\033[30m" // black
 
-string red = "\033[31m";
-string yel = "\033[33m";
-string blu = "\033[34m";
-string mag = "\033[35m";
-string reset = "\033[0m"; 
-
-void enableVirtualTerminalProcessing() {
-    HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
-    DWORD dwMode = 0;
-    GetConsoleMode(hOut, &dwMode);
-    dwMode |= ENABLE_VIRTUAL_TERMINAL_PROCESSING;
-    SetConsoleMode(hOut, dwMode);
-}
+#define RES "\033[0m" // reset
 
 int main() {
-    enableVirtualTerminalProcessing();
 
-    cout << red << "Hello world!\n";
-    cout << blu << "Hello world!\n";
-    cout << yel << "Hello world!\n";
-    cout << mag << "Hello world!\n";
-    cout << reset << "Hello world!\n";
+    std::cout << RED << "Hello world!\n"
+        RES << "Hello world!\n"
+        BLU << "Hello world!\n"
+        YEL << "Hello world!\n"
+        RES << "Hello world!\n"
+        MAG << "Hello world!\n"
+        RES << "Hello world!\n"
+        CYA << "Hello world!\n"
+        RES << "Hello world!\n"
+        RES;
 
-    system("pause");
     return 0;
 }
-
