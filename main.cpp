@@ -13,14 +13,10 @@
 int main() {
 
     std::cout << RED << "Hello world!\n"
-        RES << "Hello world!\n"
         BLU << "Hello world!\n"
         YEL << "Hello world!\n"
-        RES << "Hello world!\n"
         MAG << "Hello world!\n"
-        RES << "Hello world!\n"
         CYA << "Hello world!\n"
-        RES << "Hello world!\n"
         RES;
 
     return 0;
